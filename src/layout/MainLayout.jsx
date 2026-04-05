@@ -2,6 +2,7 @@ import { useState } from "react";
 import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function MainLayout() {
   const [open, setOpen] = useState(false);
@@ -30,6 +31,8 @@ export default function MainLayout() {
         <main className="flex-1 overflow-y-auto p-4 sm:p-5 md:p-6">
           <Outlet />
         </main>
+
+        <Footer />
       </div>
     </div>
   );

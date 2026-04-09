@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar({ open, setOpen }) {
   return (
     <div
-      className={`fixed md:static top-0 left-0 h-full w-64 bg-white border-r z-50
+      className={`fixed md:static top-0 left-0 h-full w-64 bg-gray-600 border-r z-50
       transform transition-transform duration-300
       ${open ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
     >
@@ -31,8 +31,8 @@ export default function Sidebar({ open, setOpen }) {
           className={({ isActive }) =>
             `flex items-center gap-2 p-2 rounded-lg transition 
             ${isActive
-              ? "bg-blue-100 text-blue-600 font-medium"
-              : "text-gray-600 hover:bg-gray-100"}`
+              ? "bg-blue-100 text-black font-medium"
+              : "text-black hover:bg-gray-300"}`
           }
         >
           📊 Dashboard
@@ -44,8 +44,8 @@ export default function Sidebar({ open, setOpen }) {
           className={({ isActive }) =>
             `flex items-center gap-2 p-2 rounded-lg transition 
             ${isActive
-              ? "bg-blue-100 text-blue-600 font-medium"
-              : "text-gray-600 hover:bg-gray-100"}`
+              ? "bg-blue-100 text-black font-medium"
+              : "text-black hover:bg-gray-300"}`
           }
         >
           💳 Transactions
@@ -57,8 +57,8 @@ export default function Sidebar({ open, setOpen }) {
           className={({ isActive }) =>
             `flex items-center gap-2 p-2 rounded-lg transition 
             ${isActive
-              ? "bg-blue-100 text-blue-600 font-medium"
-              : "text-gray-600 hover:bg-gray-100"}`
+              ? "bg-blue-100 text-black font-medium"
+              : "text-black hover:bg-gray-300"}`
           }
         >
           📈 Insights
